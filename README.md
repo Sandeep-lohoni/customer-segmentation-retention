@@ -26,3 +26,11 @@ purely predictive modeling.
 ```bash
 pip install -r requirements.txt
 uvicorn app.main:app --reload
+
+## Live Demo
+API URL: https://customer-segmentation-retention-deploy.onrender.com/
+
+Example:
+GET /customer/{customer_id}
+
+eg-(customer_id = 17850)
