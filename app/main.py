@@ -1,9 +1,10 @@
 from fastapi import FastAPI
 import pandas as pd
+from pathlib import Path
 
 app = FastAPI(title="Customer Retention Engine")
 
-DATA_PATH = "../data/processed/final_retention_dataset.csv"
+DATA_PATH = Path(__file__).resolve().parents[1] / "data" / "processed" / "final_retention_dataset.csv"
 
 @app.get("/")
 def home():
