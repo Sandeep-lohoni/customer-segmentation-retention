@@ -1,3 +1,4 @@
+import pandas as pd
 def compute_rfm(df, cutoff_date):
     df = df.copy()
     df["InvoiceDate"] = pd.to_datetime(df["InvoiceDate"])
